@@ -2,17 +2,21 @@
   "name": "tacoma-crime",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andybangs.github.io/tacoma-crime",
   "dependencies": {
     "@types/jest": "^20.0.8",
     "@types/node": "^8.0.25",
     "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",
+    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts-ts": "2.6.0",
     "victory": "^0.21.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
